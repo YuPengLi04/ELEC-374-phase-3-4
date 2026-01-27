@@ -1,0 +1,7 @@
+module Select_and_encode #(parameter DATA_WIDTH = 32, parameter ADDR_WIDTH = 6)(
+    input wire IR, Gra, Grb, Grc, Rin, Rout, BAout,
+	 
+    );
+
+
+endmodule

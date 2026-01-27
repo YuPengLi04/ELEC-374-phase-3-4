@@ -1,0 +1,54 @@
+`timescale 1ns/10ps
+module RAM_tb;
+
+  reg clock, Read, Write;
+  reg [31:0] address, data_in;
+  wire [31:0] data_out;
+
+  // Instantiate RAM Module
+  RAM dut_RAM (
+    .clock(clock),
+    .Read(Read),
+    .Write(Write),
+    .address(address),
+    .data_in(data_in),
+    .data_out(data_out)
+  );
+
+  initial begin
+    clock = 0;
+    forever #10 clock = ~clock; // Generate clock signal
+  end
+
+  initial begin
+    $monitor("Time=%0t | Addr=%h | Read=%b | Write=%b | DataIn=%h | DataOut=%h",
+             $time, address, Read, Write, data_in, data_out);
+
+    // Initialize all signals
+    Read = 0; Write = 0; address = 0; data_in = 0;
+    
+    #10;
+    
+    // Step 1: Write to Memory Location 0x54
+    address = 32'h54; 
+    data_in = 32'h97;  // Example value
+    Write = 1; Read = 0;
+    #20; // Wait for write to complete
+
+    // Step 2: Read from Memory Location 0x54
+    Write = 0; Read = 1;
+    #20; // Wait for read
+
+    // Step 3: Check another location (Optional)
+    address = 32'h100;
+    data_in = 32'hA5A5A5A5;
+    Write = 1; Read = 0;
+    #20;
+
+    Write = 0; Read = 1;
+    #20;
+    
+    $finish;
+  end
+
+endmodule

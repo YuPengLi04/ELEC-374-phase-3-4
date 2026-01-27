@@ -1,0 +1,931 @@
+Analysis & Elaboration report for cpu
+Mon Mar 24 09:52:19 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: register_zero:R0
+  5. Parameter Settings for User Entity Instance: register:R1
+  6. Parameter Settings for User Entity Instance: register:R2
+  7. Parameter Settings for User Entity Instance: register:R3
+  8. Parameter Settings for User Entity Instance: register:R4
+  9. Parameter Settings for User Entity Instance: register:R5
+ 10. Parameter Settings for User Entity Instance: register:R6
+ 11. Parameter Settings for User Entity Instance: register:R7
+ 12. Parameter Settings for User Entity Instance: register:R8
+ 13. Parameter Settings for User Entity Instance: register:R9
+ 14. Parameter Settings for User Entity Instance: register:R10
+ 15. Parameter Settings for User Entity Instance: register:R11
+ 16. Parameter Settings for User Entity Instance: register:R12
+ 17. Parameter Settings for User Entity Instance: register:R13
+ 18. Parameter Settings for User Entity Instance: register:R14
+ 19. Parameter Settings for User Entity Instance: register:R15
+ 20. Parameter Settings for User Entity Instance: register:PC
+ 21. Parameter Settings for User Entity Instance: register:IR
+ 22. Parameter Settings for User Entity Instance: register:Y
+ 23. Parameter Settings for User Entity Instance: register:Z
+ 24. Parameter Settings for User Entity Instance: register:ZHigh
+ 25. Parameter Settings for User Entity Instance: register:ZLow
+ 26. Parameter Settings for User Entity Instance: register:MAR
+ 27. Parameter Settings for User Entity Instance: register:HI
+ 28. Parameter Settings for User Entity Instance: register:LO
+ 29. Parameter Settings for User Entity Instance: Bus:bus
+ 30. Parameter Settings for User Entity Instance: MDR:MDR1
+ 31. Parameter Settings for User Entity Instance: Select_and_encode:SaE1
+ 32. Parameter Settings for User Entity Instance: CON_FF:con_ff
+ 33. Parameter Settings for User Entity Instance: ALU:ALU1
+ 34. Parameter Settings for User Entity Instance: ALU:ALU1|adder:add
+ 35. Parameter Settings for User Entity Instance: ALU:ALU1|sub:sub
+ 36. Parameter Settings for User Entity Instance: ALU:ALU1|BoothMul:Mul
+ 37. Parameter Settings for User Entity Instance: ALU:ALU1|div:div
+ 38. Analysis & Elaboration Settings
+ 39. Port Connectivity Checks: "ALU:ALU1|div:div"
+ 40. Port Connectivity Checks: "ALU:ALU1|sub:sub"
+ 41. Port Connectivity Checks: "ALU:ALU1|adder:add"
+ 42. Port Connectivity Checks: "CON_FF:con_ff"
+ 43. Port Connectivity Checks: "register:MAR"
+ 44. Port Connectivity Checks: "register:Z"
+ 45. Analysis & Elaboration Messages
+ 46. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Mon Mar 24 09:52:19 2025       ;
+; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                 ; cpu                                         ;
+; Top-level Entity Name         ; DataPath                                    ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_zero:R0       ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R1            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R2            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R3            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R4            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R5            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R6            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R7            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R8            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R9            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R10           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R11           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R12           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R13           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R14           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:R15           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:PC            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:IR            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:Y             ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:Z             ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:ZHigh         ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:ZLow          ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:MAR           ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:HI            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:LO            ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN  ; 32                               ; Signed Integer  ;
+; DATA_WIDTH_OUT ; 32                               ; Signed Integer  ;
+; INIT           ; 00000000000000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Bus:bus ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MDR:MDR1 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Select_and_encode:SaE1 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CON_FF:con_ff ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU1 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU1|adder:add ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU1|sub:sub ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU1|BoothMul:Mul ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU1|div:div ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; DataPath           ; cpu                ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:ALU1|div:div"                                                                                         ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; valid ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:ALU1|sub:sub"                                                                                                                                                          ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                  ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Result ; Output ; Warning  ; Output or bidir port (32 bits) is smaller than the port expression (64 bits) it drives.  The 32 most-significant bit(s) in the port expression will be connected to GND. ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:ALU1|adder:add"                                                                                                                                                        ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                  ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Result ; Output ; Warning  ; Output or bidir port (32 bits) is smaller than the port expression (64 bits) it drives.  The 32 most-significant bit(s) in the port expression will be connected to GND. ;
++--------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CON_FF:con_ff"                                                                                                                                                                       ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                 ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; branch_output     ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (32 bits) it drives.  The 31 most-significant bit(s) in the port expression will be connected to GND. ;
+; branch_output[-1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                     ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "register:MAR"                                                                                                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; BusMuxIn ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (9 bits) it drives; bit(s) "BusMuxIn[31..9]" have no fanouts ;
++----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "register:Z"                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; BusMuxIn ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon Mar 24 09:52:08 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu -c cpu --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file shiftdatapath_tb.v
+    Info (12023): Found entity 1: ShiftDatapath_tb File: C:/Users/jaeso/Downloads/ELEC374-main/ShiftDatapath_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file rotatedatapath_tb.v
+    Info (12023): Found entity 1: RotateDatapath_tb File: C:/Users/jaeso/Downloads/ELEC374-main/RotateDatapath_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file notnegdatapath_tb.v
+    Info (12023): Found entity 1: NotNegDatapath_tb File: C:/Users/jaeso/Downloads/ELEC374-main/NotNegDatapath_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file muldivdatapath_tb.v
+    Info (12023): Found entity 1: MulDivDatapath_tb File: C:/Users/jaeso/Downloads/ELEC374-main/MulDivDatapath_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file andordatapath_tb.v
+    Info (12023): Found entity 1: AndOrDatapath_tb File: C:/Users/jaeso/Downloads/ELEC374-main/AndOrDatapath_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file addsubdatapath_tb.v
+    Info (12023): Found entity 1: AddSubDatapath_tb File: C:/Users/jaeso/Downloads/ELEC374-main/AddSubDatapath_tb.v Line: 2
+Info (12021): Found 0 design units, including 0 entities, in source file cpu.v
+Info (12021): Found 1 design units, including 1 entities, in source file adder.v
+    Info (12023): Found entity 1: adder File: C:/Users/jaeso/Downloads/ELEC374-main/adder.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file bus.v
+    Info (12023): Found entity 1: Bus File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register.v
+    Info (12023): Found entity 1: register File: C:/Users/jaeso/Downloads/ELEC374-main/register.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tutorial_tb.v
+    Info (12023): Found entity 1: tutorial_tb File: C:/Users/jaeso/Downloads/ELEC374-main/tutorial_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
+    Info (12023): Found entity 1: DataPath File: C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mdr.v
+    Info (12023): Found entity 1: MDR File: C:/Users/jaeso/Downloads/ELEC374-main/MDR.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file boothmul.v
+    Info (12023): Found entity 1: BoothMul File: C:/Users/jaeso/Downloads/ELEC374-main/BoothMul.V Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: ALU File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file div.v
+    Info (12023): Found entity 1: div File: C:/Users/jaeso/Downloads/ELEC374-main/div.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sub.v
+    Info (12023): Found entity 1: sub File: C:/Users/jaeso/Downloads/ELEC374-main/sub.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ram.v
+    Info (12023): Found entity 1: RAM File: C:/Users/jaeso/Downloads/ELEC374-main/RAM.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file select_and_encode.v
+    Info (12023): Found entity 1: Select_and_encode File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file con_ff.v
+    Info (12023): Found entity 1: CON_FF File: C:/Users/jaeso/Downloads/ELEC374-main/CON_FF.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register_zero.v
+    Info (12023): Found entity 1: register_zero File: C:/Users/jaeso/Downloads/ELEC374-main/register_zero.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file select_n_encode_tb.v
+    Info (12023): Found entity 1: Select_n_encode_tb File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file addimmediatedatapath_tb.v
+    Info (12023): Found entity 1: AddImmediateDatapath_tb File: C:/Users/jaeso/Downloads/ELEC374-main/AddImmediateDatapath_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ram_tb.v
+    Info (12023): Found entity 1: RAM_tb File: C:/Users/jaeso/Downloads/ELEC374-main/RAM_tb.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at DataPath.v(66): created implicit net for "we" File: C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v Line: 66
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(14): created implicit net for "R0in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(14): created implicit net for "R1in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(14): created implicit net for "R2in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(14): created implicit net for "R3in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R4in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R5in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R6in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R7in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R8in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R9in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R10in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R11in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R12in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R13in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R14in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(15): created implicit net for "R15in" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R0out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R1out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R2out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R3out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R4out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R5out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R6out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R7out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R8out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R9out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R10out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(16): created implicit net for "R11out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(17): created implicit net for "R12out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(17): created implicit net for "R13out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(17): created implicit net for "R14out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at Select_n_encode_tb.v(17): created implicit net for "R15out" File: C:/Users/jaeso/Downloads/ELEC374-main/Select_n_encode_tb.v Line: 17
+Info (12127): Elaborating entity "DataPath" for the top level hierarchy
+Info (12128): Elaborating entity "register_zero" for hierarchy "register_zero:R0" File: C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v Line: 23
+Info (12128): Elaborating entity "register" for hierarchy "register:R1" File: C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v Line: 24
+Info (12128): Elaborating entity "Bus" for hierarchy "Bus:bus" File: C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v Line: 60
+Warning (10270): Verilog HDL Case Statement warning at Bus.v(25): incomplete case statement has no default case item File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 25
+Info (10264): Verilog HDL Case Statement information at Bus.v(25): all case item expressions in this case statement are onehot File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 25
+Warning (10240): Verilog HDL Always Construct warning at Bus.v(22): inferring latch(es) for variable "select", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.10111" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.10110" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.10101" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.10100" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.10011" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.10010" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.10001" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.10000" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.01111" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.01110" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.01101" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.01100" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.01011" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.01010" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.01001" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.01000" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.00111" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.00110" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.00101" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.00100" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.00011" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.00010" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.00001" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (10041): Inferred latch for "select.00000" at Bus.v(22) File: C:/Users/jaeso/Downloads/ELEC374-main/Bus.v Line: 22
+Info (12128): Elaborating entity "MDR" for hierarchy "MDR:MDR1" File: C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v Line: 63
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:ram1" File: C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v Line: 66
+Info (12128): Elaborating entity "Select_and_encode" for hierarchy "Select_and_encode:SaE1" File: C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v Line: 73
+Warning (10270): Verilog HDL Case Statement warning at Select_and_encode.v(57): incomplete case statement has no default case item File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 57
+Info (10264): Verilog HDL Case Statement information at Select_and_encode.v(57): all case item expressions in this case statement are onehot File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 57
+Warning (10270): Verilog HDL Case Statement warning at Select_and_encode.v(113): incomplete case statement has no default case item File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 113
+Info (10264): Verilog HDL Case Statement information at Select_and_encode.v(113): all case item expressions in this case statement are onehot File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 113
+Warning (10230): Verilog HDL assignment warning at Select_and_encode.v(165): truncated value with size 33 to match size of target (32) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 165
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R0in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R1in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R2in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R3in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R4in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R5in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R6in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R7in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R8in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R9in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R10in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R11in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R12in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R13in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R14in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R15in", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R0out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R1out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R2out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R3out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R4out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R5out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R6out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R7out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R8out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R9out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R10out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R11out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R12out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R13out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R14out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Warning (10240): Verilog HDL Always Construct warning at Select_and_encode.v(37): inferring latch(es) for variable "R15out", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 37
+Info (10041): Inferred latch for "R15out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R14out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R13out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R12out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R11out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R10out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R9out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R8out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R7out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R6out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R5out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R4out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R3out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R2out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R1out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R0out" at Select_and_encode.v(109) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 109
+Info (10041): Inferred latch for "R15in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R14in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R13in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R12in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R11in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R10in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R9in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R8in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R7in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R6in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R5in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R4in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R3in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R2in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R1in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (10041): Inferred latch for "R0in" at Select_and_encode.v(53) File: C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v Line: 53
+Info (12128): Elaborating entity "CON_FF" for hierarchy "CON_FF:con_ff" File: C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v Line: 76
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU1" File: C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v Line: 79
+Warning (10230): Verilog HDL assignment warning at ALU.v(53): truncated value with size 64 to match size of target (32) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 53
+Warning (10230): Verilog HDL assignment warning at ALU.v(57): truncated value with size 64 to match size of target (32) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 57
+Warning (10230): Verilog HDL assignment warning at ALU.v(93): truncated value with size 64 to match size of target (32) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 93
+Warning (10270): Verilog HDL Case Statement warning at ALU.v(31): incomplete case statement has no default case item File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(31): inferring latch(es) for variable "ResultLow", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(31): inferring latch(es) for variable "ResultHi", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(31): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[0]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[1]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[2]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[3]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[4]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[5]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[6]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[7]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[8]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[9]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[10]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[11]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[12]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[13]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[14]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[15]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[16]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[17]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[18]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[19]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[20]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[21]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[22]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[23]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[24]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[25]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[26]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[27]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[28]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[29]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[30]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultHi[31]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[0]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[1]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[2]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[3]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[4]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[5]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[6]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[7]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[8]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[9]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[10]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[11]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[12]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[13]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[14]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[15]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[16]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[17]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[18]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[19]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[20]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[21]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[22]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[23]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[24]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[25]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[26]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[27]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[28]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[29]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[30]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (10041): Inferred latch for "ResultLow[31]" at ALU.v(31) File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 31
+Info (12128): Elaborating entity "adder" for hierarchy "ALU:ALU1|adder:add" File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 115
+Info (12128): Elaborating entity "sub" for hierarchy "ALU:ALU1|sub:sub" File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 121
+Warning (10036): Verilog HDL or VHDL warning at sub.v(15): object "k" assigned a value but never read File: C:/Users/jaeso/Downloads/ELEC374-main/sub.v Line: 15
+Info (12128): Elaborating entity "BoothMul" for hierarchy "ALU:ALU1|BoothMul:Mul" File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 127
+Warning (10199): Verilog HDL Case Statement warning at BoothMul.V(21): case item expression never matches the case expression File: C:/Users/jaeso/Downloads/ELEC374-main/BoothMul.V Line: 21
+Warning (10199): Verilog HDL Case Statement warning at BoothMul.V(25): case item expression never matches the case expression File: C:/Users/jaeso/Downloads/ELEC374-main/BoothMul.V Line: 25
+Info (12128): Elaborating entity "div" for hierarchy "ALU:ALU1|div:div" File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 133
+Warning (10230): Verilog HDL assignment warning at div.v(57): truncated value with size 32 to match size of target (6) File: C:/Users/jaeso/Downloads/ELEC374-main/div.v Line: 57
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (144001): Generated suppressed messages file C:/Users/jaeso/Downloads/ELEC374-main/output_files/cpu.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 83 warnings
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Mon Mar 24 09:52:19 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/jaeso/Downloads/ELEC374-main/output_files/cpu.map.smsg.
+
+

@@ -1,0 +1,327 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jaeso/Downloads/ELEC374-main/simulation/modelsim
+vadder
+!s110 1742824350
+!i10b 1
+!s100 8FF?COBL7Q4nRKUa<F>;L1
+I3@0egAYc=`4MLY6g3Q;?63
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z2 w1742614094
+8C:/Users/jaeso/Downloads/ELEC374-main/adder.v
+FC:/Users/jaeso/Downloads/ELEC374-main/adder.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1742824350.000000
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/adder.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/jaeso/Downloads/ELEC374-main
+Z6 tCvgOpt 0
+vALU
+Z7 !s110 1742824352
+!i10b 1
+!s100 Y2n02eSW>E]ETI18Dh<mF0
+IN51z1CPCfYbmbj<=YG73h0
+R1
+R0
+R2
+8C:/Users/jaeso/Downloads/ELEC374-main/ALU.v
+FC:/Users/jaeso/Downloads/ELEC374-main/ALU.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1742824351.000000
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/ALU.v|
+!i113 1
+R4
+R5
+R6
+n@a@l@u
+vBoothMul
+Z9 !s110 1742824351
+!i10b 1
+!s100 oFiOQT4CHYI<8fBC_G:IB1
+IBfW?87JfMmY]ndbPaWAl42
+R1
+R0
+R2
+8C:/Users/jaeso/Downloads/ELEC374-main/BoothMul.V
+FC:/Users/jaeso/Downloads/ELEC374-main/BoothMul.V
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/BoothMul.V|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/BoothMul.V|
+!i113 1
+R4
+R5
+R6
+n@booth@mul
+vBus
+R9
+!i10b 1
+!s100 oV=zLoNjZSSP9`^CTj0S<2
+I9cPQkdK>8YhbS25?;kWTb3
+R1
+R0
+w1742817302
+8C:/Users/jaeso/Downloads/ELEC374-main/Bus.v
+FC:/Users/jaeso/Downloads/ELEC374-main/Bus.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/Bus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/Bus.v|
+!i113 1
+R4
+R5
+R6
+n@bus
+vCON_FF
+R7
+!i10b 1
+!s100 02E93Kb==UaeWkhhL:jn^0
+I1nCaJiJlj`lhh7V^8>d<l0
+R1
+R0
+R2
+8C:/Users/jaeso/Downloads/ELEC374-main/CON_FF.v
+FC:/Users/jaeso/Downloads/ELEC374-main/CON_FF.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z10 !s108 1742824352.000000
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/CON_FF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/CON_FF.v|
+!i113 1
+R4
+R5
+R6
+n@c@o@n_@f@f
+vDataPath
+R9
+!i10b 1
+!s100 QK0g]HS0mS2?^o1K^ej`01
+I1P``Yg66IzIGJ_5?9KdcQ0
+R1
+R0
+w1742823753
+8C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v
+FC:/Users/jaeso/Downloads/ELEC374-main/DataPath.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/DataPath.v|
+!i113 1
+R4
+R5
+R6
+n@data@path
+vdiv
+R7
+!i10b 1
+!s100 N[4bEYfUJ_NjNPLg2QSn^3
+IT;5X_DBZ@i=:G3CKI=FhW1
+R1
+R0
+R2
+8C:/Users/jaeso/Downloads/ELEC374-main/div.v
+FC:/Users/jaeso/Downloads/ELEC374-main/div.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/div.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/div.v|
+!i113 1
+R4
+R5
+R6
+vLoad_tb
+!s110 1742824353
+!i10b 1
+!s100 DMZ2fiX<GblN0JR>TVL4A3
+INXB2@koz8Vm6hABf4>^LH3
+R1
+R0
+w1742823148
+8C:/Users/jaeso/Downloads/ELEC374-main/Load_tb.v
+FC:/Users/jaeso/Downloads/ELEC374-main/Load_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/Load_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/Load_tb.v|
+!i113 1
+R4
+R5
+R6
+n@load_tb
+vMDR
+R9
+!i10b 1
+!s100 X]eN>o0bDaI6J`kKacA^L2
+I`CJFgLk;;zY7mVzNEFSU>2
+R1
+R0
+w1742795015
+8C:/Users/jaeso/Downloads/ELEC374-main/MDR.v
+FC:/Users/jaeso/Downloads/ELEC374-main/MDR.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/MDR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/MDR.v|
+!i113 1
+R4
+R5
+R6
+n@m@d@r
+vRAM
+R7
+!i10b 1
+!s100 nf<Fo62[3Sf5Q1ma3BOF42
+IF=IQSe:]gMBzkjV><3_^90
+R1
+R0
+w1742823853
+8C:/Users/jaeso/Downloads/ELEC374-main/RAM.v
+FC:/Users/jaeso/Downloads/ELEC374-main/RAM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/RAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/RAM.v|
+!i113 1
+R4
+R5
+R6
+n@r@a@m
+vregister
+R9
+!i10b 1
+!s100 _fH?_HHTN9<QY5^DM[P@]1
+InP@noXQGFPzKMKMZWYND@3
+R1
+R0
+R2
+8C:/Users/jaeso/Downloads/ELEC374-main/register.v
+FC:/Users/jaeso/Downloads/ELEC374-main/register.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/register.v|
+!i113 1
+R4
+R5
+R6
+vregister_zero
+R7
+!i10b 1
+!s100 AE_SBAOO36Y:`F6b3cg8:0
+ILX;eI71kM1`1I:g7SEa:83
+R1
+R0
+R2
+8C:/Users/jaeso/Downloads/ELEC374-main/register_zero.v
+FC:/Users/jaeso/Downloads/ELEC374-main/register_zero.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/register_zero.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/register_zero.v|
+!i113 1
+R4
+R5
+R6
+vSelect_and_encode
+R7
+!i10b 1
+!s100 k4>H`iJ7S0GemY]K1E]`h0
+Ic5:CHGk[GV?fB<M6K^0H^3
+R1
+R0
+R2
+8C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v
+FC:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/Select_and_encode.v|
+!i113 1
+R4
+R5
+R6
+n@select_and_encode
+vsub
+R7
+!i10b 1
+!s100 z>z^X>YUaZ7`AAhAlah[h3
+I1:]9EZAj2651JbgDMS19V2
+R1
+R0
+R2
+8C:/Users/jaeso/Downloads/ELEC374-main/sub.v
+FC:/Users/jaeso/Downloads/ELEC374-main/sub.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/jaeso/Downloads/ELEC374-main/sub.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jaeso/Downloads/ELEC374-main|C:/Users/jaeso/Downloads/ELEC374-main/sub.v|
+!i113 1
+R4
+R5
+R6

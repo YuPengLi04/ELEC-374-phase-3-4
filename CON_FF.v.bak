@@ -1,0 +1,18 @@
+module CON_FF #(parameter DATA_WIDTH = 32, parameter ADDR_WIDTH = 6)(
+    input wire clk,                      // Clock signal
+    input wire [(ADDR_WIDTH-1):0] addr,   // Address input
+    input wire [(DATA_WIDTH-1):0] data_in, // Data input (used for writing)
+    output reg [(DATA_WIDTH-1):0] data_out // Data output (used for reading)
+    );
+
+    // Declare memory storage
+    reg [DATA_WIDTH-1:0] ram [2**ADDR_WIDTH-1:0];
+
+    always @(posedge clk) begin
+        if (we) begin
+				data_out <= ram[addr]; // Read data from memory
+        end else begin
+            ram[addr] <= data_in; // Write data to memory
+        end
+    end
+endmodule

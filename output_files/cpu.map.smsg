@@ -1,0 +1,10 @@
+Warning (10268): Verilog HDL information at ShiftDatapath_tb.v(54): always construct contains both blocking and non-blocking assignments File: C:/Users/jaeso/Downloads/ELEC374-main/ShiftDatapath_tb.v Line: 54
+Warning (10268): Verilog HDL information at RotateDatapath_tb.v(54): always construct contains both blocking and non-blocking assignments File: C:/Users/jaeso/Downloads/ELEC374-main/RotateDatapath_tb.v Line: 54
+Warning (10268): Verilog HDL information at NotNegDatapath_tb.v(51): always construct contains both blocking and non-blocking assignments File: C:/Users/jaeso/Downloads/ELEC374-main/NotNegDatapath_tb.v Line: 51
+Warning (10268): Verilog HDL information at MulDivDatapath_tb.v(53): always construct contains both blocking and non-blocking assignments File: C:/Users/jaeso/Downloads/ELEC374-main/MulDivDatapath_tb.v Line: 53
+Warning (10268): Verilog HDL information at AndOrDatapath_tb.v(54): always construct contains both blocking and non-blocking assignments File: C:/Users/jaeso/Downloads/ELEC374-main/AndOrDatapath_tb.v Line: 54
+Warning (10268): Verilog HDL information at AddSubDatapath_tb.v(54): always construct contains both blocking and non-blocking assignments File: C:/Users/jaeso/Downloads/ELEC374-main/AddSubDatapath_tb.v Line: 54
+Info (10281): Verilog HDL Declaration information at ALU.v(14): object "ADD" differs only in case from object "add" in the same scope File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 14
+Info (10281): Verilog HDL Declaration information at ALU.v(15): object "SUB" differs only in case from object "sub" in the same scope File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 15
+Info (10281): Verilog HDL Declaration information at ALU.v(16): object "MUL" differs only in case from object "Mul" in the same scope File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 16
+Info (10281): Verilog HDL Declaration information at ALU.v(17): object "DIV" differs only in case from object "div" in the same scope File: C:/Users/jaeso/Downloads/ELEC374-main/ALU.v Line: 17

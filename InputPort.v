@@ -1,0 +1,5 @@
+module InputPort(parameter DATA_WIDTH_IN = 32, DATA_WIDTH_OUT = 32, INIT = 32'b0)(
+	input wire clock, clear, outPortIn,
+	input wire [DATA_WIDTH_IN-1:0] InputUnit,
+	output wire [DATA_WIDTH_IN-1:0] BusMuxInPort
+);
